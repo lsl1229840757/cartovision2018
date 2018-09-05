@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>ÏßÐÍÍ¼</title>
+	<style type="text/css">
+	body{
+			background-image: url('../image/999.jpg');
+		}
+
+£ý
+	</style>
+	<script type="text/javascript">
+		window.onload=function()
+{
+	document.getElementById("subBut").addEventListener("click",function IsMail(email,mm){
+
+document.getElementById("subBut");
+	var email=document.getElementById("email").value.trim();
+	
+	var mm=document.getElementById("mm").value.trim();
+	if(email.length!=0&&mm.length!=0)
+
+
+		{
+           
+            if(email!="戳这里输入用户名"&&mm!="戳这里输入密码"){
+			var reg=/^[a-zA-Z0-9]{6,20}$/;
+	        if(!reg.test(email)||!reg.test(mm)){alert("格式好像错了哦，要6~20位的数字和字母鸭");}
+	        else{
+	              if(email=="cartovision"&&mm=="cartovision2018"){alert("登录成功");}
+	              else {alert("登录失败");}
+	            }}
+	            else{alert("还没有输入鸭");}
+
+
+
+}
+else{alert("还没有输入鸭");}
+		 
+	
+
+	},false);
+	
+	
+}
+
+	</script>
+
+<STYLE type="text/css">
+		
+				
+		#form{
+		
+			position:absolute;
+   			 left:40%;
+  			 top:40%;
+  			  
+		}
+		
+	</STYLE>
+
+
+
+</head>
+<body>
+	
+
+
+
+        <div class="container">
+<div id="form">
+<form>
+
+	<font face="STLiti" color="#D8EAD9" size="5">用户名</font>：<input type="text" value="戳这里输入用户名" onfocus="if (value =='戳这里输入用户名'){value =''}" onblur="if (value ==''){value='戳这里输入用户名'}" / style= "background-color:transparent; border: 2px solid rgba(255,255,255,0.3);width:200px;height:30px;" name="email"id="email"><br><br>
+
+
+	 <font face="STLiti" color="#D8EAD9" size="5">密码</font>：&emsp;&thinsp;&thinsp;<input name="mm"id="mm"value="戳这里输入密码" onfocus="if (value =='戳这里输入密码'){value =''}" onblur="if (value ==''){value='戳这里输入密码'}" / style= "background-color:transparent; border: 2px solid rgba(255,255,255,0.3);width:200px;height:30px;"><br><br>
+
+	&emsp;&emsp;&emsp;&emsp;&emsp;&thinsp; <button type="submit"id="subBut" style="height:30x; width:200px;background:#F6FB51;opacity: 0.75;" >登录</button>
+
+	
+
+</form>
+</div>
+</body>
+     
+</html>
