@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>点击就送</title>
+	<link rel="stylesheet" type="text/css" href="慧图.css">
+	<script type="text/javascript" src="慧图.js"></script>
+	<embed src="Suzanne Ciani - Turning.mp3" hidden="true" autostart="true" loop="true">
+	<script type="text/javascript">
+		function load(){
+		alert("Welcome!恭喜你获得了领取通往天堂的钥匙的机会，请输入账号密码。")
+		}
+	</script>
+</head>
+<body onload="load()">
+	<form id = "container">
+		<div id = "大字">
+			<img src="大字.png">
+		</div>
+		<div id = "login" style="width: 400px;height: 300px;margin:0 auto; background:url(login.png)">
+			<h1 class = "Head">Username:</h1>
+			<div  class = "框" >
+				<input type="text" name="username" id ="username" placeholder="用户名只能为数字加字母且长度只能为6-20位" style="width: 330px;height:40px;margin-left:25px;">
+			</div>
+			<h2 class = "Head">Password:</h2>
+			<div  class = "框" >
+				<input type="password" name="password" id ="password"placeholder="密码只能为数字和字母且长度只能为6-20位" style="width: 330px;height:40px;margin-left: 25px;">
+			</div>
+			<div  class = "占个位置先">
+				<input id = "submit"type = "button" value = "登陆领取"  onclick="check1()">
+			</div>
+		</div>
+		<div>
+			<a href="https://www.baidu.com/s?ie=utf-8&f=8&rsv_bp=1&tn=baidu&wd=%E9%80%9A%E5%BE%80%E5%A4%A9%E5%A0%82%E7%9A%84%E9%92%A5%E5%8C%99&oq=%25E9%2580%259A%25E5%25BE%2580%25E5%25A4%25A9%25E5%25A0%2582%25E7%259A%2584%25E9%2592%25A5%25E5%258C%2599&rsv_pq=b9ba17380005f50e&rsv_t=1a49R%2By73PHN76GAqjOj2ZiADvc%2FwrER6Zib3In4vKHoXBUZ%2BcSM1V3cQYo&rqlang=cn&rsv_enter=0&rsv_sug=1" title="你不会百度吗？" target="_blank">什么是通往天堂的钥匙？</a>
+			<p id = "error"></p>
+		</div>
+	</form>
+</body>
+</html>

@@ -1,0 +1,55 @@
+
+		body{
+			background-color: black;
+			background-image: url(天堂之光.jpg); 
+			background-repeat: no-repeat;
+		}
+
+		#container{
+			width: 625px;
+			height: 510px;
+			margin: 0 auto;
+			margin-top: 100px;
+		}
+		
+		.Head{
+		margin:5px;
+		text-indent: 20px;
+		font-family: Segoe Print;
+		font-size: 20px;
+		color:#708090;
+		line-height: 50px;
+		}
+
+
+
+		.框{
+			width: 400px;
+			height:50px;
+			margin:0;
+		}
+
+		#submit{
+			
+			width: 300px;
+			height:50px;
+			margin-left: 40px;
+			margin-top: 8px;
+
+		}
+
+		a{
+			margin-left:125px;
+			color:Teal;
+			display: inline;
+		}
+
+		a:hover{
+			color:SlateBlue;
+		}
+
+		#error {
+			margin-left: 5px;
+			color:LightCoral;	
+			display: inline;
+		} 
