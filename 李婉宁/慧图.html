@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>2018302050283</title>
+<style>
+body
+{
+	background-image:url('background.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat:no-repeat;
+}
+
+ul{
+	margin:0;
+	padding:0;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	list-style-type: none;
+	overflow: hidden;
+}
+li{
+	float: right;
+	display: block;
+}
+a:link,a:visited{
+	color:white;
+	text-align: center;
+	padding:6px;
+	text-decoration: none;
+	font-family: "SimHei";
+}
+a:hover,a:active{
+	color:LightGray;
+}
+div{
+	width: 325px;
+	height:400px;
+	background-color: white;
+	padding-left: 50px;
+	border:1px solid black;
+	border-radius: 5px;
+	overflow: auto;
+	margin:auto;
+	position:absolute;
+	left:0;right: 0;
+	top:20%;
+}
+label{
+	font-size: bold;
+	font-family: "SimHei";
+}
+input{
+	width:200px;
+    height:20px;
+    margin: 7px;
+    padding: 3px;
+    font-family: "SimHei";
+}
+.SignFlow{
+	width: 85%;
+	height: 30px;
+	line-height: 20px;
+	margin: 0 auto;
+	margin-top: 20px;
+	color:white;
+	background-color: black;
+	border:1px solid black;
+	border-radius: 2px;
+	font-size: 14px;
+	font-family: "SimHei";
+}
+</style>
+
+</head>
+<body>
+<ul>
+    <li><a href="imagev21.html" target="_blank">加入我们</a></li>
+    <li><a href="imagev22.html" target="_blank">关于慧图&nbsp;&#124;</a></li>
+    <li><a href="imagev23.html" target="_blank">游客访问&nbsp;&#124;</a></li>
+</ul>
+<div>
+	<img src="cartovision.jpg" alt="" width="275">
+<form name="Entry" method="post">
+	<label>◆&nbsp;账号<input type="text" id="username"></label><br/>
+	<label>◆&nbsp;密码<input type="password" id="password"></label><br/>
+	<button class="SignFlow" type="submit" onclick="login()" onclick="test(s)">登录</button>
+</form>
+</div>
+<script>
+function login(){
+	if(document.Entry.username.value=="cartovision"&&document.Entry.password.value=="cartovision2018"){
+		alert("登录成功");
+		return true;
+	}else{
+	alert("登录失败");
+	return false;
+    }
+}
+</script>
+</body>
+
+</html>

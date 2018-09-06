@@ -1,0 +1,114 @@
+/**index.wxss**/
+/*.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: rgb(95, 36, 36);
+}*/
+
+.usermotto {
+  margin-top: 20rpx;
+  font-weight: bold;
+  color: #666666
+}
+.share{
+  width: 200rpx;
+  height: 200rpx;
+  border: 0rpx;
+  padding:0 0rpx;
+  position: absolute;
+  right: 32rpx;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background-size: 200rpx 200rpx;
+  background-repeat:no-repeat;
+  border:none;
+}
+
+.butright{
+  width: 185rpx;
+  height: 165rpx;
+    position: relative;
+    left: 150rpx;
+
+  background-color:white;
+  background-size: 165rpx 185rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 30rpx;
+font-weight: bold;
+  color: #666666
+
+}
+.butrightimg{
+  width:150rpx;
+  height: 100rpx;
+    position: relative;
+    top: 20rpx;
+}
+.butright::after{
+  border: none;
+}
+.butleft{
+  width: 185rpx;
+  height: 165rpx;
+    position: relative;
+    left: -150rpx;
+    bottom: 165rpx;
+  background-color:white;
+  background-size: 165rpx 185rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 30rpx;
+font-weight: bold;
+  color: #666666
+
+}
+.butleftimg{
+  width:150rpx;
+  height: 100rpx;
+  
+    position: relative;
+    top: 20rpx;
+}
+.butleft::after{
+  border: none;
+}
+.green{
+  color: #528870;
+}
+.picture{
+  
+}
+.pic{
+  width: 550rpx;
+  height: 400rpx;
+  
+}
+.btn1 {
+  width: 70%;
+  margin-top: 0rpx;
+  background-color: #bcd0c5;
+  color: white;
+  border-radius:98rpx;
+ }
+
+.btn1::after {
+  border: 0; 
+}
+

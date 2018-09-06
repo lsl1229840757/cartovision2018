@@ -1,0 +1,23 @@
+<!--index.wxml-->
+<view class="container">
+  <view class='picture'>
+    <image class='pic' src='{{sor}}'></image>
+     </view>
+    <button class="butright" bindtap ='butright' hover-class='green'  >
+    <image class="butrightimg" src='right1.png'></image>
+    <view class='you'>
+     向右翻页
+    </view>
+   </button>
+  <button class="butleft" bindtap ='butleft' hover-class='green'  >
+    <image class="butleftimg" src='left1.png'></image>
+    <view class='zuo'>
+     向左翻页
+    </view>
+   </button>
+ <button class='btn1' bindtap="song">
+ 
+    <text class="user-motto"  >{{motto}}</text>
+ 
+  </button>
+</view>
