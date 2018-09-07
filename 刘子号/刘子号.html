@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<title>登陆界面</title>
+    <style>
+    *{margin: 0;
+      padding: 0;
+        }
+
+    #first{
+           background-image: url("1.jpg");
+           position: absolute;
+           left: 0;
+           top: 50%;
+           width: 100%;
+           height: 600px;
+           margin-top: -300px;
+           background-repeat: no-repeat;
+           background-size: cover;
+       }
+    body{color: white;}
+
+    #second{ 
+            max-width: 600px;
+            height: 400px; 
+            padding: 80px 0;
+            text-align: center;
+            margin: 0 auto;
+           }
+    #second h1{font-size: 60px;}
+
+    form input{ 
+               border: 1px solid blue;
+               width: 250px;
+               padding: 10px 20px;
+               margin: 0 auto 10px auto; 
+               display: block;
+               border-radius: 20px;
+               font-size: 20px;             
+              }
+     
+    form button{ 
+               border-radius: 10px;
+               width: 80px;
+               height: 40px;
+               color:blue;
+
+               }
+    </style>
+    <head>
+    </head>
+    <body>
+    	<div id="first">
+    		<div id="second">
+                <h1>welcome</h1>
+                <form name="third"  method="post">
+                 用户名<input type="text"  placeholder="请输入用户名" id="username" />
+                 密码<input type="password"  placeholder="请输入密码" id="userpassword" />
+                    <button type="submit"  onclick="login()">登录</button>              
+                </form>
+                <script>
+                	function login(){
+	                      if(document.third.username.value=="cartovision"&&document.third.userpassword.value=="cartovision2018")
+		                      {
+		                       alert("登录成功");
+		                       return true;
+	                          }
+	                      else
+	                          {
+	                           alert("登录失败");
+	                           return false;
+	                          }
+	                                }
+    	        </script>
+    		</div>
+    	</div>
+    </body>
+</html>
