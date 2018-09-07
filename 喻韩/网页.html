@@ -1,0 +1,101 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>登录</title>
+
+<style type="text/css">
+   body{
+	background-image: url('2.jpg');
+    background-color: black;
+    background-repeat: no-repeat;
+	background-position: center;
+	}
+</body>
+</style>
+
+</head> 
+
+<body>
+  <div id="test1">诺亚方舟<br/> </div>
+  <div id="test2">之时空穿梭</div>
+
+<style>
+ #test1 {color: green;
+	margin: 0px auto;
+  text-align: center;
+  font-size: 46px
+}
+</style>
+
+
+<style>
+    #test2 {color: green;
+    	font-style: italic;
+    	font-size: 23px;
+    	font-family: Simsong;
+    	text-align: center;
+   }
+</style>
+
+<div>
+<div class="content"><h1 class="content-title" style="text-align: center;">登录</h1></div>
+<style type="text/css">
+	.ok{color:green;}
+	.error{color:red;}
+</style>
+<script type="text/javascript">
+	function checkCode(){
+		var code=document.getElementById("code").value;
+		var span=document.getElementById("code_msg");
+		var reg=/^([0-9]|[a-zA-Z]){6,20}$/;
+		if(reg.test(code)}
+			span.className="ok";
+			return true;
+		}else{
+			span.className="error";
+			return false;
+		}
+	}
+	function checkPwd(){
+		var pwd=document.getElementById("pwd").value;
+		var span=document.getElementById("pwd_msg");
+		var reg=/^([0-9]|[a-zA-Z]){6,20}$/;
+		if(reg.test(pwd)){
+			span.className="ok";
+			return true;
+	}
+	else{
+			span.className="error"；
+			return false;
+	}
+}
+</script>
+
+</div>
+
+<script>
+function checkpost(){
+if(document.forms[0].name.value=="cartovision"&&document.forms[0].pw.value=="cartovision2018"){
+window.location="www.momibook.com/future.php";
+}
+else{
+alert("用户名或密码不正确！")
+return false;
+}
+}
+</script> 
+
+
+</head>
+
+
+
+<form action="http://www.baidu.com" onsubmit="return checkCode()+checkPwd()==2;">
+
+<p style="text-align: center;">账号:<input type="text" id="code" onblur="checkCode()">
+<span id="code_msg">数字加字母且长度只能为6-20位</span></p>
+<p style="text-align: center;">密码:<input type="password" id="pwd" onblur="checkPwd()">
+<span id="pwd_msg">数字加字母且长度只能为6-20位</span></p>
+<p style="text-align: center;"><input type="submit" value="登录"></p>
+</form>
+</html>
