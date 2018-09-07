@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>»¶Ó­µÇÂ½°®±ËÓ­£¡</title>
+<style type="text/css">
+body
+{background-image:url(Í¼Æ¬3.jpg)}
+
+.gcs-login {
+  position: absolute;
+  right: 490px;
+  box-sizing: border-box;
+  width: 470px;
+  height: 50%;
+  top:180px;
+  z-index: 100; 
+}
+ .gcs-login-panel{
+ height: 360px;
+  position:absolute;
+  margin:auto;
+  left: 0;
+  right: 0;
+  top:0;
+  bottom: 0;
+}
+
+ .login-title {
+  text-align: center;
+  color: #62a8ea;
+}
+
+.login-title h2 {
+  letter-spacing: 10px;
+}
+.gcs-login-container {
+  width: 100%;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 20px ;
+  text-align: center;
+}
+.gcs-login .input {
+  border: 1px solid white;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 80%;
+  height: 46px;
+  padding-left: 10px;
+  margin: 0 auto;
+  font-size: 14px;
+  outline: none;
+  color:  #76838f;
+}
+ .gcs-login-validation{
+  width:80%;
+  margin: 0 auto;
+  position: relative;
+}
+ .validation-input{
+  position: absolute;
+  width: 250px;
+  left: 0px;
+}
+.gcs-login img{
+  position: absolute;
+  cursor:pointer;
+  width: 125px;
+  height: 45px;
+  right: 0px;
+}
+.gcs-login .input:focus {
+  outline: none;
+  border: 1px solid #62a8ea;
+}
+.gcs-login .btn-login {
+background-color:#62a8ea;
+ border: none;
+  width: 80%;
+  height: 50px;
+  line-height: 45px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+.gcs-login .btn-login:hover{
+  opacity: 0;
+}
+</style>
+
+</head>
+<body>
+<script type="text/javascript">
+         function check() {
+             if(document.getElementById("username").value=="cartovision") {
+                 alert("ÓÃ»§ÃûÕýÈ·£¡ÃÜÂë´íÎó£¡");
+                 return true ;
+             } else if(document.getElementById("password").value=="cartovision2018") {
+                 alert("µÇÂ½³É¹¦£¡");
+                 return true;
+             } else {
+                 alert("µÇÂ½Ê§°Ü£¡")
+                 return false;
+             }
+         }
+     </script>
+
+
+<div class="gcs-login">
+   <div class="gcs-login-panel">
+<div class="login-title">
+<h2>ÓÃ»§µÇÂ½</h2>
+</div>
+<div class="gcs-login-container">
+<form>
+  <input type="text" class="input" id="username" placeholder="ÇëÊäÈëÓÃ»§Ãû" />
+</div>
+<div class="gcs-login-container">
+  <input type="password"  class="input"  id="password"placeholder="ÇëÊäÈëÃÜÂë"/>
+</div>
+<div class="gcs-login-container">
+<div class="gcs-login-validation">
+
+</form>
+</div>
+</div>
+<div class="gcs-login-container">
+<input button type="submit"  onclick="check()"value="Á¢¼´µÇÂ¼" class="btn-login" />
+</div> 
+</div>
+</div>
+</body>
+</html>

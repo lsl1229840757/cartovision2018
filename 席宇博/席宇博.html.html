@@ -1,0 +1,101 @@
+<html>
+     <head>
+         <meta charset="utf-8">
+         <title></title>
+         <script type="text/javascript" >
+              function checkForm(){
+               var input1 = document.getElementByid("username");
+               alert(input1.value);
+               var uValue=input1.value;
+               if (/^[0-9a-zA-Z_]{6,20}$/.test("uValue")){
+                    alert(“校验成功”)
+                    ;
+               }else{
+                    alert("对不起，用户名只能是数字加字母且长度只能为6-20位!")
+                    return false;
+               }
+               var password=document.getElementByid("password")
+               var uPassword=password.value;
+               if (true) {
+                    alert("校验成功");
+               }else{
+                    alert("校验失败")
+                    return false;
+               }
+               return true;
+              }
+         </script>
+     </head>
+     <body>
+         <form action =file:///C:/Users/Admin/Desktop/egpp_10_ffform/egpp_10_ffform/%E5%B8%AD%E5%AE%87%E5%8D%9A2.html onsubmit="return checkForm()"> 
+     	 <table border="1px" width="100%">
+     	 	<tr>
+     	 	 	<td>
+     	 	 		<table  width="80%">
+     	 	 			<tr>
+     	 	 				<td>
+     	 	 					<img src="http://wx4.sinaimg.cn/orj360/006oH8Tbgy1flt9g75q6wj30ku09owff.jpg">
+     	 	 				</td>
+     	 	 				<td>
+     	 	 					<img src="http://wx2.sinaimg.cn/orj360/0074trZbly1fpz3748o7gj30ku0bdtg7.jpg">
+     	 	 				</td>
+     	 	 				<td >
+     	 	 					<a href="#">登录</a>
+     	 	 					<a href="#">注册</a>
+     	 	 					<a href="#">加入狒狒</a>
+     	 	 				</td>
+     	 	 			</tr>
+     	 	 		</table>
+     	 	 	</td>
+     	 	 </tr>
+     	 	 <tr bgcolor="black">
+     	 	 	<td height="50px">
+     	 	 		<a href="#"><font color="white">首页</font></a>
+     	 	 		<a href="#"><font color="white">《我在未来等你》刘大志</font></a>
+     	 	 		<a href="#"><font color="white">抖音小王子</font></a>
+     	 	 		<a href="#"><font color="white">初恋系男生</font></a>
+     	 	 	</td>
+     	 	 </tr>
+     	 	<tr>
+     	 		<td background="http://img.name2012.com/uploads/allimg/180315/2022106030-1.jpg" height="800px">
+
+     	 			<table border="5px" width="30%" height="30%" bgcolor="white" align="center">
+     	 		     	<tr>
+     	 		     		<td>
+     	 		     			<table  width="60%" height="20%" align="center">
+     	 		     				<tr>
+     	 		     					<td colspan="2"><font color="blue" size="5">会员登录</font>Member login</td>
+     	 		     				</tr>
+                                             <tr>
+                                        <td>用户名</td>
+                                        <td>
+                                            <input type="text" placeholder="请输入用户名" id="username" />
+                                                      
+                                        </td>
+                                                  
+                                    </tr>
+                                    <tr>
+                                        <td>密码</td>
+                                        <td>
+                                            <input type="password" placeholder="请输入密码" id="password" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>
+                                            <input type="submit" value="登录" />
+                                        </td>
+     	 		     				
+     	 		     				</tr>
+                                             </form>
+     	 		     			</table>
+     	 		     		</td>
+     	 		     	</tr>
+     	 		     </table></td>
+
+     	 		     
+     	 	</tr>
+         </table>
+     </form>
+</body>
+</html>
